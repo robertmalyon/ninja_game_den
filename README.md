@@ -37,10 +37,11 @@ The GUI would allow the creation of a product price label and barcode, which cou
 
 When printing a product's labels the option to send the product details to the company website is offered. This functionality works and it sends a POST request to the WooCommerce API creating a new product in the online database.
 
-Finally the program 'hijacked' an unused table in the EPOS system's database and allowed the tracking of unique products as opposed to generic ones. This assigned a BAT number to a product and printed the BAT number as a barcode to cover a games built-in manufacturer barcode. This enabled us to include details about the individual product's condition.
+Finally the program 'hijacked' an unused table in the EPOS system's database and allowed the tracking of unique products as opposed to generic ones. This assigned a BAT number to a product and printed the BAT number as a barcode to cover a game's 'built-in' manufacturer barcode. This enabled us to include details about the individual product's condition.
 
 One additional feature that I was pleased with was that I used Python's Regular Expressions module to improve the presentation and format of data taken from the database. So, often products had been entered as block capitals with internal notes added in brackets. this didn't matter as only part of the details appeared on a receipt and it was just for our records. When it came to using these titles to populate the website I ensured that titles were set to 'title case' and additional details included in brackets were removed, whitespace stripped and other small changes. I also included some default values for some of the fields to speed up data input.
-Further Ideas I had
+
+## Further Ideas I had
 
 Apart from deploying the thing I did have a few other goals that I also didn't get to!
 I was working on a way of using Python to automate the naming of IMG files so that we could take product photos and have them tie in with the relevant product based on order so that they could be bulk-uploaded.
